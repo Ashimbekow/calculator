@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Calculate</title>
+</head>
+<body style="background-color: rgb(201, 203, 178);">
+   <center>
+      <h1 style="color:rgb(33, 33, 35);">Калькулятор</h1>
+      <div class="wrapper "style=" padding: 100px 100px 200px;">
+   <div class="secondInput">
+      <input style="width: 300px;background-color: rgb(195, 202, 216); height: 40px;" type="text" id="input" placeholder="Поля для ввода..." >
+    </div>
+    <div class="secondNumber">
+      <button style="width: 60px; background-color: darkgray; height: 50px;  margin-top:5px;" onclick="appendToInput('7')">7</button>
+      <button style="width: 60px; background-color: darkgray; height: 50px; "onclick="appendToInput('8')">8</button>
+      <button style="width: 60px;background-color:  darkgray; height: 50px;  "onclick="appendToInput('9')">9</button>
+      <button style="width: 60px;background-color:  darkgray; height: 50px;  "onclick="appendToInput('/')">/</button>
+    </div>
+    <div class="secondNumberOne">
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('4')">4</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('5')">5</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('6')">6</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('*')">*</button>
+    </div>
+    <div class="secondNumberTwo">
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('1')">1</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('2')">2</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('3')">3</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('-')">-</button>
+    </div>
+    <div class="secondNumberThree">
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('0')">0</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('.')">.</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="calculate()">=</button>
+      <button style="width: 60px;background-color: darkgray; height: 50px;" onclick="appendToInput('+')">+</button>
+    </div>
+    <div class="secondButton">
+      <button style="width: 120px; color: white; background-color: rgb(167, 41, 41); height: 30px;margin-top:5px;" onclick="clearInput()">Очистить</button>
+    </div>
+   </div>
+   </center>
+</body>
+<script src="source.js"></script>
+</html>
